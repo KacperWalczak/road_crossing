@@ -26,8 +26,11 @@ while game_is_on:
     # checking if player touched the car
     for car in cars_manager.cars:
         if player.distance(car) < 30 and abs(car.ycor()) - abs(player.ycor()) < 20:
-            game_is_on = False
-            game_over = score_board.game_over()
+            # game_is_on = False
+            # score_board.game_over()
+            game_is_on = score_board.reset_board()
+            player.reset_position()
+            cars_manager.reset_position(CAR_INTENSITY)
 
     if player.ycor() > FINISH_LINE_Y:
         player.reset_position()

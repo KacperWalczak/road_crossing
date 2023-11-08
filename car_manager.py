@@ -4,7 +4,7 @@ COLORS = ["red", "orange", "yellow", "green", "blue", "purple"]
 STARTING_MOVE_DISTANCE = 5
 MOVE_INCREMENT = 10
 STARTING_X = 300
-CAR_INTENSITY = 10
+CAR_INTENSITY = 5
 Y_LIMIT = 12
 Y_DISTANCE_BETWEEN_CARS = 20
 
